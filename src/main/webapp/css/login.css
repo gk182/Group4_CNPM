@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.toggle {
+    margin-top: 20px;
+}
+
+.toggle a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.toggle a:hover {
+    color: #505457;
+    text-decoration: underline;
+}
+
+.error {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Styles for Google Sign-In button */
+.g-signin2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.g-signin2 .abcRioButton {
+    background-color: white; /* Màu nền trắng */
+    color: #4285F4; /* Màu chữ xanh dương của Google */
+    border: 2px solid black; /* Viền đen */
+    border-radius: 5px; /* Bo góc */
+    padding: 12px 30px; /* Padding cho nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: 600; /* Đậm chữ */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s; /* Hiệu ứng chuyển tiếp */
+    width: 100%; /* Đặt chiều rộng của nút là 100% */
+    max-width: 400px; /* Đặt chiều rộng tối đa cho nút */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng cho nút */
+}
+
+.g-signin2 .abcRioButton:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #4285F4; /* Màu chữ không thay đổi khi hover */
+    transform: translateY(-2px); /* Hiệu ứng nâng lên khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+}
+
+.g-signin2 .abcRioButton:active {
+    transform: translateY(0); /* Trở về vị trí ban đầu khi nhấn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng trở lại khi nhấn */
+}
+
+/* Thêm biểu tượng Google vào nút */
+.g-signin2 .abcRioButton .google-icon {
+    margin-right: 8px; /* Khoảng cách giữa biểu tượng và chữ */
+    width: 20px; /* Kích thước biểu tượng */
+    height: 20px; /* Kích thước biểu tượng */
+}
